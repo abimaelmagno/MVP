@@ -1,0 +1,12 @@
+<div class='container'>
+<form>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating %>
+  <!-- adds bootstrap button  -->
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+
+<p type="button" class="btn btn-link"><%= link_to 'Back to restaurants', restaurants_path %></p> 
+</form>
+</div>
